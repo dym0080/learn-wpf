@@ -16,19 +16,20 @@ using System.Windows.Shapes;
 namespace ExpenseIt
 {
     /// <summary>
-    /// ExpenseItHome.xaml 的交互逻辑
+    /// ExpenseReportPage.xaml 的交互逻辑
     /// </summary>
-    public partial class ExpenseItHome : Page
+    public partial class ExpenseReportPage : Page
     {
-        public ExpenseItHome()
+        public ExpenseReportPage()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        // Custom constructor to pass expense report data
+        public ExpenseReportPage(object data) : this()
         {
-            ExpenseReportPage page = new ExpenseReportPage(this.peopleListBox.SelectedItem);
-            this.NavigationService.Navigate(page);
+            // Bind to expense report data.
+            this.DataContext = data;
         }
     }
 }
