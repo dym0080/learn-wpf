@@ -41,7 +41,7 @@
         </Grid.Resources>
 
         <Grid.Background>
-            <ImageBrush ImageSource="D:\mygit\learn-wpf\ExpenseIt\ExpenseIt\20200606192910.jpg" />
+            <ImageBrush ImageSource="20200606192910.jpg" />
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
@@ -68,12 +68,8 @@
         </Border>
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
                  ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
-                 ItemTemplate="{StaticResource nameItemTemplate}">>
-            
-            <!--<ListBoxItem>Mike</ListBoxItem>
-            <ListBoxItem>Lisa</ListBoxItem>
-            <ListBoxItem>John</ListBoxItem>
-            <ListBoxItem>Mary</ListBoxItem>-->
+                 ItemTemplate="{StaticResource nameItemTemplate}">
+
         </ListBox>
 
         <!-- View report button -->

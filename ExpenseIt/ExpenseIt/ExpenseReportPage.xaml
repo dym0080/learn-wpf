@@ -20,7 +20,7 @@
             </DataTemplate>
         </Grid.Resources>
         <Grid.Background>
-            <ImageBrush ImageSource="D:\mygit\learn-wpf\ExpenseIt\ExpenseIt\20200606192910.jpg" />
+            <ImageBrush ImageSource="20200606192910.jpg" />
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />
