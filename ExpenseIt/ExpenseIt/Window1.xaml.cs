@@ -21,7 +21,10 @@ namespace ExpenseIt
     {
         public Window1()
         {
+            
             InitializeComponent();
+
+            // test
         }
     }
 }
